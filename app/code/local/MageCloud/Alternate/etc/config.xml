@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2019. All rights reserved.
+  ~ @author: Sviatoslav Lashkiv
+  ~ @mail:   ss.lashkiv@gmail.com
+  ~ @github: https://github.com/sviatoslav-lashkiv
+  -->
+
+<config>
+    <modules>
+        <MageCloud_Alternate>
+            <version>1.0.0</version>
+        </MageCloud_Alternate>
+    </modules>
+    <global>
+        <helpers>
+            <alternate>
+                <class>MageCloud_Alternate_Helper</class>
+            </alternate>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_layout_generate_blocks_after>
+                <observers>
+                    <magecloud_alternate>
+                        <type>singleton</type>
+                        <class>MageCloud_Alternate_Model_Observer</class>
+                        <method>alternateLinks</method>
+                    </magecloud_alternate>
+                </observers>
+            </controller_action_layout_generate_blocks_after>
+        </events>
+    </frontend>
+</config>

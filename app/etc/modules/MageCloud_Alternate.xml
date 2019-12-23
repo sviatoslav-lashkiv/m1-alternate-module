@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2019. All rights reserved.
+  ~ @author: Sviatoslav Lashkiv
+  ~ @mail:   ss.lashkiv@gmail.com
+  ~ @github: https://github.com/sviatoslav-lashkiv
+  -->
+
+<config>
+    <modules>
+        <MageCloud_Alternate>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MageCloud_Alternate>
+    </modules>
+</config>
